@@ -1,0 +1,32 @@
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="15.191190999999998">
+<testsuite name="setup\globalSetup.spec.ts" timestamp="2025-04-11T15:42:32.270Z" hostname="setup" tests="1" failures="0" skipped="0" time="5.666" errors="0">
+<testcase name="Global setup" classname="setup\globalSetup.spec.ts" time="5.666">
+<system-out>
+<![CDATA[Executing global setup
+BaseUrl: https://practice.expandtesting.com
+Creating new context for user practice.
+
+[[ATTACHMENT|output\globalSetup-Global-setup-setup\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="e2e\loggedUser.spec.ts" timestamp="2025-04-11T15:42:32.270Z" hostname="e2e" tests="1" failures="0" skipped="0" time="5.43" errors="0">
+<testcase name="Test storage state" classname="e2e\loggedUser.spec.ts" time="5.43">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|output\loggedUser-Test-storage-state-e2e\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="e2e\logoutUser.spec.ts" timestamp="2025-04-11T15:42:32.270Z" hostname="e2e" tests="1" failures="0" skipped="0" time="2.611" errors="0">
+<testcase name="Test without storage state" classname="e2e\logoutUser.spec.ts" time="2.611">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|output\logoutUser-Test-without-storage-state-e2e\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
