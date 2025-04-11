@@ -2,12 +2,12 @@ import { Page, chromium } from '@playwright/test';
 import { LoginPage } from '../pages/loginPage';
 
 export type User = {
-  login?: string;
-  password?: string;
-  storageStatePath?: string;
+  login: string;
+  password: string;
+  storageStatePath: string;
 };
 
-export async function createCustomContext(user: User) {
+export async function createUserContext(user: User) {
     const browser = await chromium.launch();
     const context = await browser.newContext();
     let page = await context.newPage();
