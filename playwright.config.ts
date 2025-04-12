@@ -30,6 +30,15 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+    /*
+    {
+      name: 'setup',
+      outputDir: './output',
+      testDir: './tests/api',
+     // use: { ...devices['Desktop Chrome'] },
+    },
+    */
+
     {
       name: 'setup',
       outputDir: './output',
@@ -44,6 +53,7 @@ export default defineConfig({
       testDir: './tests/e2e',
      // use: { ...devices['Desktop Chrome'] },
     },
+
 
 
     /*

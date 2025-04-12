@@ -1,14 +1,14 @@
 
+
 import { test } from '../../fixtures/fixtures'
 
+//IMORTANT
 test.use({ storageState: './storageStates/storageState.json' });
 
-test('Test storage state', async ({ mainPageFixture }) => {
-  await test.step(`WHEN: User opens the main page while logged in`, async () => {
-    await mainPageFixture.navigateTo();
+test('Test storage state for api request', async ({ loginPageFixture }) => {
+  await test.step(``, async () => {
+    await loginPageFixture.verifyLoggedUser(process.env.USER!, process.env.LASTNAME!);
   });
-  
-  await test.step(`THEN: For authenticated user logout option is displayed`, async () => {
-    await mainPageFixture.checkIfLogoutButtonIsVisible();
-  });
+
 });
+

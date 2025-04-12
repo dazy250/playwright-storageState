@@ -8,3 +8,4 @@ node_modules/
 /output/
 /playwright-report/
 storageStates/
+/playwright-report
