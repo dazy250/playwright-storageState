@@ -1,5 +1,5 @@
-import { test } from '../../fixtures/fixtures'
-
+import { expect, Page, test } from '@playwright/test';
+import { createUserContext } from '../../common/user';
 
 export const storageState = 'storageStates/storageState.json';
 
@@ -9,13 +9,14 @@ export const admin = {
     storageStatePath: storageState,
   };
 
-test('Global setup', async ({loginPageFixture}) => {
+test('Global setup', async () => {
   console.log('Executing global setup');
   console.log(`BaseUrl: ${process.env.BASE_URL}`);
-  
+
+  let page: Page;
   await test.step('Given context for user is created', async () => {
-    await loginPageFixture.POSTLogin();
-    await loginPageFixture.request.storageState({ path: storageState });
+    page = await createUserContext(admin);
+    await page.close();
   });
 
 });
